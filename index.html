@@ -21,7 +21,7 @@
         <br>
         <div class="row text-center">
             <input type="text" id="password" placeholder="Create Password" class="form-control text-center col-md-8 m-auto">
-            <button id="copytoclip" data-clipboard-target ="#password" class="btn btn-secondary ml-2 col-md-1 m-auto" title="Copy to Clipboard!"><em class="fa fa-clone"></em></button>
+            <button id="copytoclip" data-clipboard-target ="#password" onclick="myFunction();" class="btn btn-secondary ml-2 col-md-1 m-auto" title="Copy to Clipboard!"><em class="fa fa-clone"></em></button>
         </div>
         <br>
         <center><button class="btn btn-success m-auto text-center" onclick="GeneratePassword();"> Generate Password</button></center>
@@ -31,7 +31,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 
 <script type="text/javascript">
-
+function myFunction() {
+  alert("Password Copied Successfully!");
+}
 function GeneratePassword(){
 
     var characters = "0123456789~!@#$%^&*()_+}{][=-\|:;'/?><.,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
