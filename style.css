@@ -1,0 +1,23 @@
+body{
+user-select: none;
+background: #FF5F6D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.fontstyle{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:xx-large;
+    color:rgb(255, 126, 135);
+    text-shadow: 1px 1px 2px yellow;
+    font-weight: 900;
+    
+}
+.margin50{
+    margin-top: 15%;
+    margin-bottom: 25%;
+}
+::placeholder{
+    color: aquamarine;
+}
