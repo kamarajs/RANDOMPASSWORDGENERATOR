@@ -14,19 +14,24 @@
     <title>Password Generator</title>
 </head>
 <body>
-    <section class="container margin50"> 
-    <div class="jumbotron m-auto w-50 shadow bg-light" >
+  
+    <div class="margin50 jumbotron bg-transparent"> 
+    <div class="jumbotron m-auto w-75 shadow-lg bg-white" >
         <h4 class="text-center fontstyle">Random Password Generator</h4>
         <hr class="w-50 mt-0 pt-0">
         <br>
-        <div class="row text-center">
-            <input type="text" id="password" placeholder="Create Password" class="form-control text-center col-md-8 m-auto">
-            <button id="copytoclip" data-clipboard-target ="#password" onclick="myFunction();" class="btn btn-secondary ml-2 col-md-1 m-auto" title="Copy to Clipboard!"><em class="fa fa-clone"></em></button>
+        <div class="row text-center p-4">
+            <div class="col-md-2"></div>
+            <input type="text" id="password" placeholder="Create Password" class="shadow rounded-pill form-control text-center col-md-7 ml-auto mr-auto mb-3" >
+           
+            <button id="copytoclip" data-clipboard-target ="#password" onclick="myFunction();" class="shadow btn btn-outline-info btn-lg rounded-circle ml-auto mr-auto mt-auto mb-3 " title="Copy to Clipboard!"><em class="fa fa-clone"></em></button>
+            <div class="col-md-1"></div>
         </div>
-        <br>
-        <center><button class="btn btn-success m-auto text-center" onclick="GeneratePassword();"> Generate Password</button></center>
-    </div>
-</section>
+    
+        <center><button class="btn btn-outline-success shadow rounded-pill m-auto text-center" onclick="GeneratePassword();"> Generate Password</button></center>
+  
+   
+</div>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 
